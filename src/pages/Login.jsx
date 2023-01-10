@@ -45,7 +45,9 @@ const Login = () => {
 		dispatch(login(userData));
 	};
 
-	// if (isLoading) return <h1>Loading...</h1>;
+	// if (isLoading) return(
+	// 	toast.success('Logging in...')
+	// );
 	return (
 		<section className=''>
 			<div className=' max-w-6xl flex container mx-auto p-10 md:flex-row  py-8  my-5 flex-col-reverse items-center'>

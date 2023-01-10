@@ -13,7 +13,7 @@ const Vault = () => {
 				{vaults.length > 0 ? (
 					<div div className='grid  md:grid-cols-4 gap-x-2 gap-y-4'>
 						{vaults.map((vault) => (
-							<VaultList vault={vault} key={vault.user} />
+							<VaultList vault={vault} key={vault._id} />
 						))}
 					</div>
 				) : (
