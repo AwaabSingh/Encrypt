@@ -53,13 +53,13 @@ const Register = () => {
 			<div className=' max-w-6xl flex container mx-auto items-center justify-between md:flex-row  py-8  my-5 flex-col'>
 				{/* Imag */}
 				<div className='md:w-1/2 md:self-center'>
-					<img src='img/pm-reg.png' alt=''  />
+					<img src='img/pm-reg.png' alt='' />
 				</div>
 				{/* Form */}
 				<div className=' md:w-1/2 '>
 					<form
 						onSubmit={onSubmit}
-						className=' flex flex-col py-10 space-y-3  mx-auto px-3 rounded-xl md:space-y-6   md:w-[400px] bg-white shadow-md'
+						className=' flex flex-col py-10 space-y-3  mx-auto px-3 rounded-xl md:space-y-6 w-[350px]  md:w-[400px] bg-white shadow-md'
 					>
 						<h1 className='text-center py-3 font-semibold text-xl text-secondaryBlue'>
 							Create Your Free Account!
@@ -96,7 +96,7 @@ const Register = () => {
 						</label>
 						<label className='flex flex-col '>
 							<span className='text-darkBlue px-2 py-1 font-meduim'>
-								Password:{' '}
+								Master Password:{' '}
 							</span>
 							<input
 								type='password'

@@ -28,8 +28,6 @@ const Login = () => {
 		if (isSuccess || user) {
 			navigate('/dashboard');
 		}
-
-		
 	}, [user, isError, isSuccess, message, navigate, dispatch]);
 
 	const onChange = (e) => {
@@ -84,7 +82,7 @@ const Login = () => {
 						</label>
 						<label className='flex flex-col '>
 							<span className='text-darkBlue px-2 py-1 font-meduim'>
-								Password:{' '}
+								Master Password:{' '}
 							</span>
 							<input
 								type='password'
