@@ -1,11 +1,14 @@
 import React from 'react';
 import VaultList from './VaultList';
 import { useSelector } from 'react-redux';
+import Loader from './Loader';
 
 const Vault = () => {
 	const { vaults, isLoading, isError, message } = useSelector(
 		(state) => state.vault
 	);
+
+	let loading = true;
 
 	return (
 		<section className='bg-white h-[300px] shadow p-10 overflow-y-scroll scrollbar-thin '>
@@ -18,9 +21,13 @@ const Vault = () => {
 					</div>
 				) : (
 					<div className='flex items-center justify-center'>
-						<h3 className='text-center bg-red-500 py-2 font-semibold text-lightColor md:span-4 px-5 rounded shadow'>
-							Your Vault is Empty
-						</h3>
+						{isLoading ? (
+							<Loader text='Loading...' />
+						) : (
+							<h3 className='text-center bg-red-500 py-2 font-semibold text-lightColor md:span-4 px-5 rounded shadow'>
+								Your Vault is Empty
+							</h3>
+						)}
 					</div>
 				)}
 			</div>

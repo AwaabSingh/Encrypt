@@ -40,12 +40,15 @@ const Dashboard = () => {
 				<div className='flex items-center'>
 					{/* <VaultTop user={user} /> */}
 					<div className='flex bg-white shadow p-4 rounded-lg pt-5 w-[700px] justify-center mx-auto flex-col md:flex-row items-center'>
-						<div className='text-6xl pr-2 text-primaryBlue'>
-							<SiVault />
+						<div className='text-6xl  text-primaryBlue'>
+							<img src='img/vault.png' alt='' className='h-32' />
 						</div>
-						<div className='space-y-3 pl-8'>
-							<h4 className='font-bold '>
-								Welcome to your Vault {user && user.name}
+						<div className='space-y-3 '>
+							<h4 className='font-bold text-center md:text-left'>
+								Welcome to your Vault{' '}
+								<span className='text-secondaryBlue font-bold capitalize '>
+									{user && user.name}
+								</span>
 							</h4>
 							<p className='max-w-lg text-sm text-secondaryBlue '>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit.

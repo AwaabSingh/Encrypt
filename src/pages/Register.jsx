@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { register, reset } from '../features/auth/authSlice';
 import { toast } from 'react-toastify';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
 const Register = () => {
 	const [formData, setFormData] = useState({
@@ -46,6 +47,8 @@ const Register = () => {
 
 		dispatch(register(userData));
 	};
+
+	let loading = true;
 
 	// if (isLoading) return <h1>Loading...</h1>;
 	return (
@@ -109,11 +112,19 @@ const Register = () => {
 								required
 							/>
 						</label>
-						<input
+						<button
 							type='submit'
-							value='Sign Up'
 							className='bg-primaryBlue mt-3 rounded-xl py-2 font-semibold text-lightColor cursor-pointer'
-						/>
+						>
+							{isLoading ? (
+								<div className='flex justify-center space-x-3  items-center'>
+									<AiOutlineLoading3Quarters className='w-4 h-4 animate-spin font-bold' />
+									<p className='text-sm font-ms'>Registering...</p>
+								</div>
+							) : (
+								'Sign Up'
+							)}
+						</button>
 					</form>
 				</div>
 			</div>

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { login, reset } from '../features/auth/authSlice';
 import { toast } from 'react-toastify';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
 const Login = () => {
 	const [formData, setFormData] = useState({
@@ -45,6 +46,9 @@ const Login = () => {
 		dispatch(login(userData));
 	};
 
+
+
+	let loading = true;
 	// if (isLoading) return(
 	// 	toast.success('Logging in...')
 	// );
@@ -96,11 +100,25 @@ const Login = () => {
 								required
 							/>
 						</label>
-						<input
+						{/* <input
 							type='submit'
-							value='Sign Up'
+							value={loginBtn}
 							className='bg-primaryBlue mt-3 rounded-xl py-2 font-semibold text-lightColor cursor-pointer'
-						/>
+						/> */}
+
+						<button
+							type='submit'
+							className='bg-primaryBlue mt-3 rounded-xl py-2 font-semibold text-lightColor cursor-pointer'
+						>
+							{isLoading ? (
+								<div className='flex justify-center space-x-3  items-center'>
+									<AiOutlineLoading3Quarters className='w-4 h-4 animate-spin font-bold' />
+									<p className='text-sm font-ms'>Logging In...</p>
+								</div>
+							) : (
+								'Sign In'
+							)}
+						</button>
 					</form>
 				</div>
 				<div className='md:w-1/2 '>

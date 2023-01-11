@@ -31,7 +31,7 @@ const VaultList = ({ vault }) => {
 		<section>
 			<div className=' bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 p-6 rounded-xl flex justify-between items-center border-[] border-blue-300'>
 				<h1 className='text-lightColor'>{vault.title}</h1>
-				<div className='font-bold text-xl flex space-x-2 cursor-pointer'>
+				<div className='font-bold text-2xl flex space-x-2 cursor-pointer md:text-xl'>
 					<BiShowAlt
 						className='text-green-600 '
 						onClick={() =>
