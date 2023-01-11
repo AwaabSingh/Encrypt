@@ -16,6 +16,7 @@ const Navbar = () => {
 		dispatch(logout());
 		dispatch(reset());
 		navigate('/');
+		setToggleMenu(false);
 	};
 
 	return (
