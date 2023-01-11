@@ -93,7 +93,11 @@ const Navbar = () => {
 					<div className='flex flex-col  justify-end items-center flex-1 space-y-3 text-md font-semibold'>
 						{user ? (
 							<>
-								<Link to='/dashboard' className=' text-lightColor'>
+								<Link
+									onClick={() => setToggleMenu(false)}
+									to='/dashboard'
+									className=' text-lightColor'
+								>
 									Dashboard
 								</Link>
 								<Link
