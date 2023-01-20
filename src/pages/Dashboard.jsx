@@ -51,11 +51,14 @@ const Dashboard = () => {
 								</span>
 							</h4>
 							<p className='max-w-lg text-sm text-secondaryBlue '>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Nesciunt, magnam,Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Nesciunt, magnam! Lorem ipsum dolor sit amet,
-								consectetur adipisicing elit. Nesciunt, magnam,Lorem ipsum dolor
-								sit amet, consectetur adipisicing elit. Nesciunt, magnam!
+								Keep your sensitive information safe and secure with our
+								built-in password vault. Our state-of-the-art encryption
+								technology ensures that your passwords and personal information
+								are protected at all times. With our user-friendly vault, you
+								can easily store and manage your information in one convenient
+								and secure location, accessible with just a single master
+								password. Trust <span className='font-bold'>Enrpt</span> to
+								protect your online identity.
 							</p>
 						</div>
 					</div>

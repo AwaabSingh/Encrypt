@@ -12,8 +12,8 @@ const Hero = () => {
 						Password Management from Anywhere
 					</h1>
 					<p className='max-w-sm text-center  md:text-left text-lightColor px-2 md:px-0'>
-						Manage makes it simple for software teams to plan day-to-day tasks
-						while keeping the larger team goals in view.
+						Say goodbye to forgotten passwords with SecurePass. Keep all your
+						login information safe and secure in one convenient location
 					</p>
 					<div className='flex justify-center md:justify-start'>
 						{user ? (
@@ -38,7 +38,7 @@ const Hero = () => {
 					<img src='/img/heroImg.svg' alt='' className='p-14' />
 				</div>
 			</div>
-		</section>
+	</section>
 	);
 };
 

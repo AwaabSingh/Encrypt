@@ -9,19 +9,19 @@ const About = () => {
 					<img src='img/pm-about.png' alt='' />
 				</div>
 
-				<div className='flex flex-col space-y-12 md:w-1/3 md:mb-10'>
+				<div className='flex flex-col space-y-9 md:w-1/3 md:mb-10'>
 					<h4 className='max-w-sm font-bold pt-5 text-4xl text-center md:text-center'>
 						About Us
 					</h4>
 					<p className='max-w-md text-center text-darkBule md:text-center  px-2 md:px-0 '>
-						Manage provides all the functionality your team needs, without the
-						complexity. Our software is tailor-made for modern digital product
-						teams.
+						At Enrpt, we believe in the power of strong, unique passwords to
+						keep your online accounts secure.
 					</p>
 					<p className='max-w-sm text-center text-darkBule md:text-center  px-2 md:px-0 '>
-						Manage provides all the functionality your team needs, without the
-						complexity. Our software is tailor-made for modern digital product
-						teams.
+						Our password manager makes it easy to generate and store complex
+						passwords, while our state-of-the-art encryption technology keeps
+						your sensitive information safe. Trust Enrpt to keep your online
+						identity secure.
 					</p>
 				</div>
 			</div>

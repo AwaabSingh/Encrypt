@@ -46,12 +46,6 @@ const Navbar = () => {
 				</div>
 				{user ? (
 					<div className='flex space-x-2 items-center'>
-						{/* <Link
-							to='/dashboard'
-							className='hidden md:block p-3 px-6 pt-2 text-lightColor cursor-pointer bg-darkBlue rounded-full baseline hover:bg-secondaryBlue'
-						>
-							Dashboard
-						</Link> */}
 						<button
 							onClick={onLogout}
 							className='hidden md:block p-3 px-6 pt-2 text-lightColor cursor-pointer bg-darkBlue rounded-full baseline hover:bg-secondaryBlue'

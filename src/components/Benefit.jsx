@@ -18,9 +18,9 @@ const Benefit = () => {
 						<div className='space-y-3'>
 							<h4 className='font-bold'>Transport Security</h4>
 							<p className='mx-w-sm text-sm text-secondaryBlue'>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Nesciunt, magnam,Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Nesciunt, magnam!
+								protects data while being transmitted over networks, using
+								encryption and authentication methods like SSL/TLS, HTTPS and
+								SFTP, to prevent unauthorized access and tampering!
 							</p>
 						</div>
 					</div>
@@ -32,9 +32,9 @@ const Benefit = () => {
 						<div className='space-y-3'>
 							<h4 className='font-bold text-darkBule'>Authentication</h4>
 							<p className='mx-w-sm text-sm text-secondaryBlue'>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Nesciunt, magnam,Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Nesciunt, magnam!
+								Multi-factor authentication adds an extra layer of security by
+								requiring a secondary form of verification, like a fingerprint
+								or security code, in addition to a password!
 							</p>
 						</div>
 					</div>
@@ -46,9 +46,10 @@ const Benefit = () => {
 						<div className='space-y-3'>
 							<h4 className='font-bold'>Local Encryption</h4>
 							<p className='mx-w-sm text-sm text-secondaryBlue'>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Nesciunt, magnam,Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Nesciunt, magnam!
+								uses a secure key that is stored on the device to encrypt the
+								data, makes it harder for hackers to access the information and
+								also protects the data in transit during synchronization
+								process!
 							</p>
 						</div>
 					</div>

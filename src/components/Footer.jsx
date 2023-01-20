@@ -22,11 +22,10 @@ const Footer = () => {
 							className='w-16'
 						/>
 						<span className='text-lightColor font-semibold text-2xl '>
-							Encrypt
+							Enrpt
 						</span>
 					</div>
 					<div className=' space-x-1 items-center pt-5 hidden md:flex'>
-						
 						<div className='flex text-lightColor space-x-3 text-2xl cursor-pointer'>
 							<BsFacebook />
 							<AiFillInstagram />
@@ -37,22 +36,25 @@ const Footer = () => {
 				</div>
 
 				<div className=''>
-					<h4 className=' font-bold text-lightColor tracking-wide text-xl'>
+					<h4 className=' font-bold text-lightColor tracking-wide text-xl mb-2'>
 						Features
 					</h4>
-					<ul className=''>
-						<li>test</li>
-						<li>test</li>
-						<li>test</li>
+					<ul className='space-y-3   text-darkBlue font-semibold'>
+						<li>Password Vault</li>
+						<li>Password Manager</li>
+						<li>Generate Password</li>
 					</ul>
 				</div>
 				<div className=''>
-					<h4 className=' font-bold text-lightColor tracking-wide text-xl'>
-						Encrypt
+					<h4 className=' font-bold text-lightColor tracking-wide text-xl pt-3'>
+						Get Enrpt
 					</h4>
-					<ul className=''>
-						<li>test</li>
-						<li>test</li>
+					<ul>
+						<div className='space-y-2   text-darkBlue font-semibold'>
+							<li>Mac</li>
+							<li>Windows</li>
+							<li>Windows</li>
+						</div>
 						<div className='flex space-x-3 mt-3  text-2xl md:text-xl text-lightColor cursor-pointer'>
 							<AiFillWindows />
 							<FaLinux />
@@ -61,7 +63,6 @@ const Footer = () => {
 						</div>
 					</ul>
 					<div className=' space-x-1 items-center pt-5 flex md:hidden'>
-						
 						<div className='flex text-lightColor space-x-1 text-2xl cursor-pointer'>
 							<BsFacebook />
 							<AiFillInstagram />
