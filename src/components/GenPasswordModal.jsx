@@ -81,7 +81,7 @@ const GenPasswordModal = ({ setShowModal }) => {
               readOnly
               className="border-2 rounded-md py-1 outline-primaryBlue"
               value={result}
-              placeholder="Min 6 Char"
+              placeholder="Min 8 Char"
             />
             <div className="text-lightColor text-xl bg-primaryBlue px-1 py-1 rounded cursor-pointer">
               <FaClipboard onClick={handleClipboard} />
