@@ -3,7 +3,7 @@ import { hashPassword } from '../utilies/crypto';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { login, reset } from '../features/auth/authSlice';
-import { toast } from 'react-toastify';
+import { toast } from "react-hot-toast";
 import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
 const Login = () => {
@@ -27,6 +27,7 @@ const Login = () => {
 		}
 
 		if (isSuccess || user) {
+			toast.success('User logged in successfully')
 			navigate('/dashboard');
 		}
 	}, [user, isError, isSuccess, message, navigate, dispatch]);
@@ -48,7 +49,7 @@ const Login = () => {
 
 
 
-	let loading = true;
+	
 	// if (isLoading) return(
 	// 	toast.success('Logging in...')
 	// );

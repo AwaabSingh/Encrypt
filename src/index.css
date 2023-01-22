@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.field{
+		@apply flex justify-between items-center mt-5  h-[40px] rounded-md bg-gray-200 px-2
+	}
+	.field label {
+		width: 100%;
+		padding: 10px;
+		cursor: pointer;
+	}
+}
+
 .bg-blue-gradient {
 	background: linear-gradient(
 		-168.39deg,
