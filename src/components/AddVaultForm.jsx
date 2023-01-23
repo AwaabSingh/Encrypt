@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { addVault } from "../features/vault/vaultSlice";
 import { toast } from "react-hot-toast";
 import GenPasswordModal from "./GenPasswordModal";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const AddVaultForm = () => {
   const [showModal, setShowModal] = useState(false);
@@ -10,6 +11,11 @@ const AddVaultForm = () => {
     title: "",
     password: "",
   });
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePassword = () => {
+    setShowPassword(!showPassword);
+  };
 
   const dispatch = useDispatch();
 
@@ -52,12 +58,12 @@ const AddVaultForm = () => {
             required
           />
         </label>
-        <label className="flex md:space-x-3 pr-3 items-center flex-col md:flex-row">
+        <label className="flex md:space-x-3 pr-3 items-center flex-col md:flex-row relative">
           <span className="self-start p-2 md:p-0 md:self-center">
             Password:
           </span>
           <input
-            type="password"
+            type={showPassword === false ? "password" : "text"}
             placeholder="Add a Password"
             className="border w-[300px] px-3 py-2 rounded-xl border-secondaryBlue  outline-primaryBlue"
             name="password"
@@ -65,6 +71,13 @@ const AddVaultForm = () => {
             onChange={onChange}
             required
           />
+          <div className="absolute top-12 right-[17px] text-xl pt-1 px-2 text-secondaryBlue md:top-2 cursor-pointer font-bold">
+            {showPassword === false ? (
+              <AiOutlineEye onClick={togglePassword} />
+            ) : (
+              <AiOutlineEyeInvisible onClick={togglePassword} />
+            )}
+          </div>
         </label>
 
         <input

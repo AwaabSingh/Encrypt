@@ -79,7 +79,7 @@ const GenPasswordModal = ({ setShowModal }) => {
             <input
               type="text"
               readOnly
-              className="border-2 rounded-md py-1 outline-primaryBlue"
+              className="border-2 rounded-md py-1 outline-primaryBlue pl-2"
               value={result}
               placeholder="Min 8 Char"
             />
